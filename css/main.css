@@ -147,6 +147,37 @@ Author's custom styles
     }
 }
 
+.appear {
+    -webkit-animation: appear 1s ease both;
+    animation: appear 1s ease both;
+}
+
+@-webkit-keyframes appear {
+    from {
+        -webkit-transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    from {
+        -webkit-transform: translateZ(600px);
+        transform: translateZ(600px);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
 
 /****************************************************************
 ************************* common ********************************
@@ -171,13 +202,14 @@ a {
     color: black;
 }
 
-a:visited{
-  color: inherit;
+a:visited {
+    color: inherit;
 }
+
 .outils img {
     height: 140px;
     filter: grayscale(100%);
-    transition: filter 0.5s;
+    transition: filter 1s;
 }
 
 .outils img:hover {
@@ -233,6 +265,63 @@ header .intro .text-head {
     width: 200px;
 }
 
+header nav {
+    opacity: 0.8;
+}
+
+header nav a {
+    color: white;
+}
+
+/****************************************************************
+************************** portfolio ****************************
+****************************************************************/
+
+.portfolioarticle .archiduchesse .right {
+    border-top: 3px #CB1C5D solid;
+}
+
+.portfolioarticle .boncoin .left {
+    border-top: 3px #F56B2A solid;
+}
+
+.portfolioarticle .boncoin h2 {
+    color: #F56B2A;
+}
+
+.portfolioarticle .archiduchesse h2 {
+    color: #CB1C5D;
+}
+
+.portfolioarticle .quiver h2 {
+    color: #418DE7;
+}
+
+.portfolioarticle .quiver .right {
+    border-top: 3px #418DE7 solid;
+}
+
+
+/****************************************************************
+  ************************** End  *********************************
+  ****************************************************************/
+
+
+/****************************************************************
+************************** footer *******************************
+****************************************************************/
+
+footer i {
+    margin-right: 10px;
+    color: black;
+}
+
+footer a:hover i{
+    color: white;
+    transition: transform 1s;
+    transform: rotate(-7deg);
+}
+
 .footericon {
     width: 40%;
     margin: auto;
@@ -247,25 +336,9 @@ header .intro .text-head {
     padding: 20px 0;
 }
 
-footer , header nav{
+footer, header nav {
     background-color: #252627;
     color: white;
-}
-header nav{
-  opacity: 0.8;
-}
-header nav a{
-  color: white;
-}
-
-footer i {
-    margin-right: 10px;
-}
-
-footer a:hover {
-    color: white;
-    transition: transform 1s;
-    transform: rotate(-360deg);
 }
 
 
@@ -299,11 +372,26 @@ footer a:hover {
 
 @media (min-width:992px) {
     /****************************************************************
-************************* Header ********************************
-****************************************************************/
-    /****************************************************************
 ************************* portfolio ********************************
 ****************************************************************/
+    .portfolioarticle .archiduchesse .right {
+        border-top: none;
+    }
+    .portfolioarticle .boncoin .left {
+        border-top: none;
+    }
+    .portfolioarticle .boncoin h2 {
+        color: inherit;
+    }
+    .portfolioarticle .archiduchesse h2 {
+        color: inherit;
+    }
+    .portfolioarticle .quiver h2 {
+        color: inherit;
+    }
+    .portfolioarticle .quiver .right {
+        border-top: none;
+    }
     .portfolioarticle:hover .archiduchesse .right {
         animation: right 1s ease-in-out;
         border-top: 3px #CB1C5D solid;
