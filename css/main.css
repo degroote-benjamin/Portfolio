@@ -152,6 +152,10 @@ Author's custom styles
 ************************* common ********************************
 ****************************************************************/
 
+nav {
+    height: 60px;
+}
+
 .centercenter {
     display: flex;
     align-items: center;
@@ -165,6 +169,19 @@ figure {
 
 a {
     color: black;
+}
+
+a:visited{
+  color: inherit;
+}
+.outils img {
+    height: 140px;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+.outils img:hover {
+    filter: none;
 }
 
 
@@ -214,6 +231,41 @@ header .intro .text-head {
 .centercenter img {
     height: 200px;
     width: 200px;
+}
+
+.footericon {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-bottom: 1px solid white;
+}
+
+.footercopyright {
+    padding: 20px 0;
+}
+
+footer , header nav{
+    background-color: #252627;
+    color: white;
+}
+header nav{
+  opacity: 0.8;
+}
+header nav a{
+  color: white;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+footer a:hover {
+    color: white;
+    transition: transform 1s;
+    transform: rotate(-360deg);
 }
 
 
@@ -285,6 +337,20 @@ header .intro .text-head {
     }
     .portfolioarticle:hover a img {
         transform: scale(1.05);
+    }
+    .portfolioarticle .quiver h2 {
+        transition: 0.5s;
+    }
+    .portfolioarticle:hover .quiver h2 {
+        color: #418DE7;
+    }
+    .portfolioarticle:hover .quiver .right {
+        animation: right 1s ease-in-out;
+        border-top: 3px #418DE7 solid;
+        animation-fill-mode: forwards;
+    }
+    .portfolioarticle .quiver .right {
+        width: 40%;
     }
 }
 

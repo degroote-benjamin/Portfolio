@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -39,16 +39,16 @@
         <!-- nav -->
 
 
-        <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+        <nav class="navbar navbar-toggleable-md fixed-top">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse .d-flex flex-row-reverse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">About</span></a>
-                    <a class="nav-item nav-link" href="#">Competence</a>
-                    <a class="nav-item nav-link" href="#">Portfolio</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link" href="#about">About</span></a>
+                    <a class="nav-item nav-link" href="#compet">Competence</a>
+                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </nav>
@@ -74,7 +74,7 @@
 
     <!-- section presentation -->
 
-    <div class="container">
+    <div class="container" id="about">
         <h2 class="text-center py-4">About me</h2>
         <div class="col-12 centercenter py-5">
             <img src="http://fotomelia.com/wp-content/uploads/edd/2015/09/bonhomme-blanc-3d-images-gratuites-libres-de-droits22-1560x1169.jpg" alt="">
@@ -91,8 +91,8 @@
 
     <!-- section competence -->
 
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid" id="compet">
+        <div class="container outils">
             <h2 class="text-center py-4">Outils</h2>
 
             <div class="row">
@@ -119,46 +119,91 @@
                     <p class="py-4"> Le principal objectif d'un site web est d'apparaître sur les premieres pages de recherche Indexation des liens. Optimisation du code source(HTML sémantique). Intégration des réseaux sociaux </p>
 
                 </article> -->
+                <div class="col-10 col-sm-6 col-lg-3 py-5">
+                    <img src="http://solidfoundationwebdev.com/system/categories/images/000/000/004/original/html-css.png?1404763647" alt="" class="col-12">
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-3 py-5">
+                    <img src="https://iitic.fr/wp-content/uploads/2014/02/logo_javascript.png" alt="" class="col-12">
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-3 py-5">
+                    <img src="http://r36software.com.br/wp-content/uploads/git-logo.png" alt="" class="col-12">
+                </div>
+
+                <div class="col-10 col-sm-6 col-lg-3 py-5">
+                    <img src="http://editorconfig.org/logos/atom.png" alt="" class="col-12">
+                </div>
 
             </div>
         </div>
-    </div>
 
 
-    <!-- end section competence -->
+        <!-- end section competence -->
 
-    <!-- section portfolio -->
-    <div class="container">
+        <!-- section portfolio -->
+        <div class="container" id="portfolio">
 
-        <h2 class="text-center py-5">Portfolio</h2>
-        <div href="col-12">
-            <figure class="d-flex align-items-center flex-column flex-lg-row col-12 portfolioarticle">
-                <a href="https://degroote-benjamin.github.io/archiduchesse/" class="col-lg-8"><img src="img/resp.png" alt="" class="col-12"></a>
-                <figcaption class="px-5 col-lg-4 col-12 archiduchesse">
-                    <h2>Archiduchesse</h2>
-                    <hr class="right">
-                    <p>Reproduction</p>
-                </figcaption>
-            </figure>
+            <h2 class="text-center py-5">Portfolio</h2>
+            <div href="col-12">
+                <figure class="d-flex align-items-center flex-column flex-lg-row col-12 portfolioarticle">
+                    <a href="https://degroote-benjamin.github.io/archiduchesse/" class="col-lg-8"><img src="img/resp.png" alt="" class="col-12"></a>
+                    <figcaption class="px-5 col-lg-4 col-12 archiduchesse">
+                        <h2>Archiduchesse</h2>
+                        <hr class="right">
+                        <p>Reproduction</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div href="col-12 py-5">
+                <figure class="d-flex align-items-center flex-column-reverse flex-lg-row col-12 portfolioarticle">
+                    <figcaption class="px-5 col-12 col-lg-4 boncoin">
+                        <h2>Bon coin</h2>
+                        <hr class="left">
+                        <p>Reproduction</p>
+                    </figcaption>
+                    <a href="https://degroote-benjamin.github.io/leboncoin/" class="col-lg-8"> <img src="img/bon-coin.png" alt="" class="col-12"></a>
+                </figure>
+            </div>
+
+            <div href="col-12 py-5">
+                <figure class="d-flex align-items-center flex-column flex-lg-row col-12 portfolioarticle">
+                    <a href="" class="col-lg-8"><img src="img/desktop.png" alt="" class="col-12"></a>
+                    <figcaption class="px-5 col-lg-4 col-12 quiver">
+                        <h2>Quiver</h2>
+                        <hr class="right">
+                        <p>Reproduction</p>
+                    </figcaption>
+                </figure>
+            </div>
+
         </div>
-
-        <div href="col-12">
-            <figure class="d-flex align-items-center flex-column-reverse flex-lg-row col-12 portfolioarticle">
-                <figcaption class="px-5 col-12 col-lg-4 boncoin">
-                    <h2>Bon coin</h2>
-                    <hr class="left">
-                    <p>Reproduction</p>
-                </figcaption>
-                <a href="https://degroote-benjamin.github.io/leboncoin/" class="col-lg-8"> <img src="img/bon-coin.png" alt="" class="col-12"></a>
-            </figure>
-        </div>
-
     </div>
-
-<!-- filter: grayscale(100%); -->
-
 
     <!--  end section portfolio -->
+
+
+
+    <!-- footer -->
+
+    <footer class="container-fluid" id="contact">
+        <div class="container">
+            <div class="col-12 footericon">
+                <a href="https://twitter.com/degrootebenjam1"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                <a href="https://github.com/degroote-benjamin"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                <a href="https://fr.linkedin.com/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+                <a href="mailto:degroote.benjamin@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-12 footercopyright">
+                <h4 class="text-center">Copyright © DEGROOTE Portfolio 2017</h4>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- end footer -->
 
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
