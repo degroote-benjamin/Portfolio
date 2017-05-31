@@ -43,7 +43,6 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-            <a class="navbar-brand" href="#">Navbar</a>
             <div class="collapse navbar-collapse .d-flex flex-row-reverse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#">About</span></a>
@@ -94,11 +93,11 @@
 
     <div class="container-fluid">
         <div class="container">
-            <h2 class="text-center py-4">Competence</h2>
+            <h2 class="text-center py-4">Outils</h2>
 
             <div class="row">
 
-                <article class="col-12 col-lg-4 text-center">
+                <!-- <article class="col-12 col-lg-4 text-center">
 
                     <i class="material-icons i">code</i>
                     <h3>Intégration</h3>
@@ -119,7 +118,7 @@
                     <h3>Référencement</h3>
                     <p class="py-4"> Le principal objectif d'un site web est d'apparaître sur les premieres pages de recherche Indexation des liens. Optimisation du code source(HTML sémantique). Intégration des réseaux sociaux </p>
 
-                </article>
+                </article> -->
 
             </div>
         </div>
@@ -130,30 +129,33 @@
 
     <!-- section portfolio -->
     <div class="container">
-        <a href="col-12">
-            <figure class="d-flex align-items-center">
-                <img src="img/resp.png" alt="">
-                <figcaption class="px-5">
-                    <h2>Archiduchesse</h2>
-                    <hr>
-                    <p>Reproduction</p>
-                </figcaption>
-            </figure>
-        </a>
 
-        <a href="col-12">
-            <figure class="d-flex align-items-center">
-                <figcaption class="px-5">
-                    <h2>Bon coin</h2>
-                    <hr>
+        <h2 class="text-center py-5">Portfolio</h2>
+        <div href="col-12">
+            <figure class="d-flex align-items-center flex-column flex-lg-row col-12 portfolioarticle">
+                <a href="https://degroote-benjamin.github.io/archiduchesse/" class="col-lg-8"><img src="img/resp.png" alt="" class="col-12"></a>
+                <figcaption class="px-5 col-lg-4 col-12 archiduchesse">
+                    <h2>Archiduchesse</h2>
+                    <hr class="right">
                     <p>Reproduction</p>
                 </figcaption>
-                <img src="img/bon-coin.png" alt="">
             </figure>
-        </a>
+        </div>
+
+        <div href="col-12">
+            <figure class="d-flex align-items-center flex-column-reverse flex-lg-row col-12 portfolioarticle">
+                <figcaption class="px-5 col-12 col-lg-4 boncoin">
+                    <h2>Bon coin</h2>
+                    <hr class="left">
+                    <p>Reproduction</p>
+                </figcaption>
+                <a href="https://degroote-benjamin.github.io/leboncoin/" class="col-lg-8"> <img src="img/bon-coin.png" alt="" class="col-12"></a>
+            </figure>
+        </div>
 
     </div>
 
+<!-- filter: grayscale(100%); -->
 
 
     <!--  end section portfolio -->
