@@ -273,6 +273,7 @@ header nav a {
     color: white;
 }
 
+
 /****************************************************************
 ************************** portfolio ****************************
 ****************************************************************/
@@ -316,7 +317,7 @@ footer i {
     color: black;
 }
 
-footer a:hover i{
+footer a:hover i {
     color: white;
     transition: transform 1s;
     transform: rotate(-7deg);
@@ -374,6 +375,9 @@ footer, header nav {
     /****************************************************************
 ************************* portfolio ********************************
 ****************************************************************/
+    .margbot {
+        margin-bottom: 40px;
+    }
     .portfolioarticle .archiduchesse .right {
         border-top: none;
     }
