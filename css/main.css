@@ -314,7 +314,9 @@ header nav a {
 /****************************************************************
   ************************** End  *********************************
   ****************************************************************/
-
+h2{
+  font-family: "Lobster","Arial Black",Arial,Helvetica,sans-serif;
+}
 
 /****************************************************************
 ************************** footer *******************************
@@ -325,11 +327,14 @@ footer i {
     color: black;
 }
 
+footer a i {
+    transition: transform 0.4s;
+}
+
 footer a:hover i {
     color: white;
-    transition: transform 1s;
-    transform: rotate(-7deg);
-    -webkit-transform: rotate(-7deg);
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
 }
 
 .footericon {
@@ -404,10 +409,10 @@ footer, header nav {
         animation-fill-mode: forwards;
     }
     .portfolioarticle .archiduchesse .right {
-        width: 80%;
+        width: 100%;
     }
     .portfolioarticle .boncoin .left {
-        width: 50%;
+        width: 80%;
     }
     .portfolioarticle:hover .boncoin .left {
         animation: left 1s ease-in-out;
@@ -445,7 +450,7 @@ footer, header nav {
         animation-fill-mode: forwards;
     }
     .portfolioarticle .quiver .right {
-        width: 40%;
+        width: 45%;
     }
 }
 
